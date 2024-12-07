@@ -1,0 +1,39 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh;
+  background-color: #121212; /* Background color for the whole page */
+}
+
+* {
+  box-sizing: border-box; /* Ensure proper box sizing */
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px; /* Set a max-width for the content */
+  padding: 20px;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Add space between main content and header/footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  #root {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,97 @@
+.card {
+  display: flex;
+  background-color: #2a2a2a;
+  color: #fff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  justify-content: flex-start; /* Align the content to the left */
+  position: relative; /* Make the card a positioning context for the delete button */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.card-image {
+  width: 200px;
+  height: 252px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-content {
+  margin-left: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content has space */
+  height: 100%;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-content p {
+  margin: 5px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 10px; /* Give some space between description and actions */
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  gap: 10px; /* Add spacing between buttons */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-actions button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.card-actions button:hover {
+  opacity: 0.8; /* Hover effect for buttons */
+}
+
+/* Separate delete button positioning */
+.delete-btn {
+  position: absolute; /* Position relative to the card */
+  bottom: 10px; /* 10px from the bottom */
+  right: 10px; /* 10px from the right */
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: center; /* Center content */
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    margin-left: 0;
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .card-actions {
+    justify-content: center; /* Center action buttons */
+  }
+
+  .delete-btn {
+    position: static; /* Reset position for small screens */
+    margin-top: 10px; /* Add space between the other buttons */
+  }
+}

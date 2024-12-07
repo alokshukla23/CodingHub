@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&display=swap'); /* Import Google Font */
+
+.footer {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 20px; /* Adds padding around the content */
+  background-color: #000000; /* Sets background color to black */
+  color: #fff; /* Sets text color to white */
+  font-family: 'Karantina', Arial, sans-serif; /* Sets font family with fallback */
+  font-size: 28px; /* Sets font size */
+  gap: 5px; /* Add space between items */
+}
+
+.footer img {
+  width: 150px; /* Adjust logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.footer p {
+  margin: 0; /* Remove default paragraph margin */
+}

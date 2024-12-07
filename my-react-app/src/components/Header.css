@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&display=swap'); /* Import Google Font */
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Distribute left and right sections */
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 15px 30px;
+  border-bottom: 10px solid red;
+  width: 100%;
+  font-family: 'Karantina', Arial, sans-serif; /* Apply Karantina font */
+}
+
+.left-section {
+  display: flex;
+  align-items: center; /* Align logo and text vertically */
+  gap: 20px; /* Add space between logo and text */
+}
+
+.logo-image {
+  width: 60px; /* Adjust logo size */
+  height: auto;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.right-section {
+  display: flex;
+}
+
+.nav-links {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  gap: 15px; /* Space between nav links */
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-section {
+    margin-bottom: 10px;
+  }
+
+  .right-section {
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
